@@ -1,0 +1,16 @@
+[retriever]
+type = SimpleIMAPSSLRetriever
+server = imap.gmail.com
+username = username
+password = mailpassword
+
+[destination]
+type = Maildir
+path = ~/mail/
+
+[options]
+verbose = 2
+message_log = ~/.getmail/gmail.log
+read_all = false
+delivered_to = false
+received = false
